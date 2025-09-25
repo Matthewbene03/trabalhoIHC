@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,18 +8,20 @@
     <link rel="stylesheet" href="./css/navMenu.css">
     <link rel="stylesheet" href="./css/class.css">
     <link rel="stylesheet" href="./css/tag.css">
+    <link rel="shortcut icon" href="./img/Logo_CEFET-MG.png" type="image/x-icon">
     <title>CEFET/MG - Timoteo</title>
 </head>
+
 <body>
     <!--Divisão da pagina-->
     <!--Vai ter a parte principal, parte para arquitetura, computação e metalurgica. A ideia é fazer os dos três cursos iguias, mas com informações referentes ao curso-->
     <!--Construção do menu de navegação. Esse pode ser usado nas quatros paginas-->
 
-    <nav>
-        <div class="logo marginLeftRigth5Porc">
-            <h1>Cefet/MG - Timoteo</h1>
+    <nav class="marginLeftRigth5Porc">
+        <div class="logo">
+            <img src="img/Logo_CEFET-MG.png">
         </div>
-        <div class="links marginLeftRigth5Porc">
+        <div class="links">
             <a href="#home" class="link_a_navMenu">Home</a>
             <a href="#arquitetura" class="link_a_navMenu">Arquitetura</a>
             <a href="#computacao" class="link_a_navMenu">Computação</a>
@@ -26,19 +29,85 @@
         </div>
     </nav>
 
-    <section id="home">
-        Home
-    </section>
-    <section id="arquitetura">
-        Arquitetura
-    </section>
-    <section id="computacao">
-        Computação
-    </section>
-    <section id="metalurgica">
-        Metalurgica
+    <section id="home" class="marginLeftRigth5Porc estruturaSection">
+        <div class="sectionTexto">
+            <h1>CEFET/MG - Timoteo</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui dolores tenetur culpa aspernatur autem aut,
+                sunt labore doloremque neque eveniet voluptatibus fugit reprehenderit dolorum earum sapiente nemo eius
+                officiis nobis.</p>
+            <p>Atque optio qui, cum totam delectus animi eos consequuntur! Laudantium ullam quas, sequi delectus nihil
+                saepe reprehenderit ab iusto in illo! Error ipsum, esse harum dolores repellendus perferendis labore
+                itaque!</p>
+            <p>Totam necessitatibus laudantium fugit. Minus voluptatum, corrupti vel eaque quos nemo minima odio!
+                Dolores molestias corrupti cum esse. Magnam delectus nisi debitis nihil ab odit aut, facilis
+                voluptatibus iure doloremque!</p>
+            <a href="https://www.timoteo.cefetmg.br/" target="_blank" rel="noopener noreferrer">Site do CEFET</a>
+        </div>
+        <div class="sectionImg">
+            <img src="./img/Logo_CEFET-MG.png" alt="">
+        </div>
     </section>
 
-    <footer></footer>
+    <section id="arquitetura" class="marginLeftRigth5Porc estruturaSection">
+        <div class="sectionImg">
+            <img src="./img/Logo_CEFET-MG.png" alt="">
+        </div>
+        <div class="sectionTexto">
+            <h2>Arquitetura</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui dolores tenetur culpa aspernatur autem aut,
+                sunt labore doloremque neque eveniet voluptatibus fugit reprehenderit dolorum earum sapiente nemo eius
+                officiis nobis.</p>
+            <p>Atque optio qui, cum totam delectus animi eos consequuntur! Laudantium ullam quas, sequi delectus nihil
+                saepe reprehenderit ab iusto in illo! Error ipsum, esse harum dolores repellendus perferendis labore
+                itaque!</p>
+            <p>Totam necessitatibus laudantium fugit. Minus voluptatum, corrupti vel eaque quos nemo minima odio!
+                Dolores molestias corrupti cum esse. Magnam delectus nisi debitis nihil ab odit aut, facilis
+                voluptatibus iure doloremque!</p>
+            <a href="./cursos/arquitetura.html">Mais informações sobre esse curso</a>
+        </div>
+    </section>
+
+    <section id="computacao" class="marginLeftRigth5Porc estruturaSection">
+        <div class="sectionTexto">
+            <h2>Computação</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui dolores tenetur culpa aspernatur autem aut,
+                sunt labore doloremque neque eveniet voluptatibus fugit reprehenderit dolorum earum sapiente nemo eius
+                officiis nobis.</p>
+            <p>Atque optio qui, cum totam delectus animi eos consequuntur! Laudantium ullam quas, sequi delectus nihil
+                saepe reprehenderit ab iusto in illo! Error ipsum, esse harum dolores repellendus perferendis labore
+                itaque!</p>
+            <p>Totam necessitatibus laudantium fugit. Minus voluptatum, corrupti vel eaque quos nemo minima odio!
+                Dolores molestias corrupti cum esse. Magnam delectus nisi debitis nihil ab odit aut, facilis
+                voluptatibus iure doloremque!</p>
+            <a href="./cursos/computacao.html">Mais informações sobre esse curso</a>
+        </div>
+        <div class="sectionImg">
+            <img src="./img/Logo_CEFET-MG.png" alt="">
+        </div>
+    </section>
+
+    <section id="metalurgica" class="marginLeftRigth5Porc estruturaSection">
+        <div class="sectionImg">
+            <img src="./img/Logo_CEFET-MG.png" alt="">
+        </div>
+        <div class="sectionTexto">
+            <h2>Metalurgica</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui dolores tenetur culpa aspernatur autem aut,
+                sunt labore doloremque neque eveniet voluptatibus fugit reprehenderit dolorum earum sapiente nemo eius
+                officiis nobis.</p>
+            <p>Atque optio qui, cum totam delectus animi eos consequuntur! Laudantium ullam quas, sequi delectus nihil
+                saepe reprehenderit ab iusto in illo! Error ipsum, esse harum dolores repellendus perferendis labore
+                itaque!</p>
+            <p>Totam necessitatibus laudantium fugit. Minus voluptatum, corrupti vel eaque quos nemo minima odio!
+                Dolores molestias corrupti cum esse. Magnam delectus nisi debitis nihil ab odit aut, facilis
+                voluptatibus iure doloremque!</p>
+            <a href="./cursos/metalutrgica.html">Mais informações sobre esse curso</a>
+        </div>
+    </section>
+
+    <footer>
+        footer
+    </footer>
 </body>
+
 </html>

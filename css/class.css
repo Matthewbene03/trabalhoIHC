@@ -3,3 +3,27 @@
 .marginLeftRigth5Porc{
     margin: 0 5%;
 }
+
+.estruturaSection{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.sectionTexto{
+    flex: 50%;
+    border: 2px solid blue;
+}
+
+.sectionImg{
+    flex: 50%;
+    height: 100%;
+    text-align: center;
+    border: 2px solid blue;  
+}
+
+.sectionImg img{
+    height: 80%;
+}
