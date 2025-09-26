@@ -10,8 +10,6 @@ nav {
     left: 0;
     right: 0;
     background-color: white;
-    border: 2px solid black;
-
     height: 75px;
 }
 
@@ -33,8 +31,6 @@ nav div.logo img {
     height: auto;
     width: auto;
 }
-
-nav div.links {}
 
 .link_a_navMenu {
     font-family: "Karla", sans-serif;

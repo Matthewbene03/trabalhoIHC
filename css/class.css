@@ -3,3 +3,10 @@
 .marginLeftRigth5Porc {
     margin: 0 5%;
 }
+
+.backgroundImg{
+    background-image: url("../img/background.svg");
+    height: 100vh;
+    padding-top: 100px;
+    color: white;
+}

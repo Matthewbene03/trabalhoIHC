@@ -1,5 +1,108 @@
 section {
     height: 100vh;
+    padding: 100px 5% 50px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+section:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+.estruturaSection {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.sectionTexto {
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.sectionTexto h1, 
+.sectionTexto h2 {
+    font-family: "Cal Sans", sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+    color: #004c84;
+    text-align: left;
+}
+
+.sectionTexto p {
+    font-family: "Karla", sans-serif;
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.sectionImg {
+    flex: 50%;
+    text-align: center;
+    height: 100%;
+}
+
+.sectionImg img {
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+#btnSiteCefet,
+.btnMaisInformacoesCurso {
+    font-family: "Karla", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+    background-color: #004c84;
+    padding: 12px 25px;
+    margin-top: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease-in-out;
+}
+
+#btnSiteCefet:hover,
+.btnMaisInformacoesCurso:hover {
+    background-color: #1490e8;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 900px) {
+    .estruturaSection {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sectionTexto {
+        align-items: center;
+        text-align: center;
+    }
+
+    .sectionTexto h1,
+    .sectionTexto h2 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .sectionImg img {
+        max-width: 100%;
+    }
+}
+
+/*section {
+    height: 100vh;
     padding-top: 80px;
     border: 2px solid red;
 }
@@ -90,4 +193,4 @@ section {
 .btnMaisInformacoesCurso:hover {
     background-color: #1490e8;
     color: rgb(255, 255, 255);
-}
+}*/
