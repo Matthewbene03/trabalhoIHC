@@ -1,6 +1,93 @@
-section{
+section {
     height: 100vh;
     padding-top: 80px;
     border: 2px solid red;
 }
 
+.estruturaSection {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.sectionTexto {
+    flex: 50%;
+    height: 100%;
+    display: flex;
+    flex-wrap:nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    border: 2px solid blue;
+}
+
+.sectionTexto h1, .sectionTexto h2{
+    font-family: "Cal Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 65px;
+    text-align: center;
+}
+
+.sectionTexto p {
+    font-family: "Karla", sans-serif;
+    font-style: normal;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    padding: 10px 15px;
+
+    margin: 10px 20px;
+}
+
+.sectionImg {
+    flex: 50%;
+    height: 100%;
+    text-align: center;
+    border: 2px solid blue;
+}
+
+.sectionImg img {
+    height: 80%;
+}
+
+#btnSiteCefet {
+    font-family: "Karla", sans-serif;
+    font-style: normal;
+    text-decoration: none;
+    color: rgb(255, 255, 236);
+    font-size: 25px;
+    padding: 10px 15px;
+    margin: 10px 30px;
+    background-color: #004c84;
+    border-radius: 10px;
+    width: fit-content;
+
+    transition: background-color 0.5s linear;
+}
+
+#btnSiteCefet:hover {
+    background-color: #1490e8;
+    color: rgb(255, 255, 255);
+}
+
+.btnMaisInformacoesCurso {
+    font-family: "Karla", sans-serif;
+    font-style: normal;
+    text-decoration: none;
+    color: rgb(255, 255, 236);
+    font-size: 25px;
+    padding: 10px 15px;
+    margin: 10px 30px;
+    background-color: #004c84;
+    border-radius: 10px;
+    width: fit-content;
+
+    transition: background-color 0.5s linear;
+}
+
+.btnMaisInformacoesCurso:hover {
+    background-color: #1490e8;
+    color: rgb(255, 255, 255);
+}
