@@ -1,0 +1,60 @@
+#tituloArquitetura {
+    color: #004c84 !important;
+  }
+  
+  #subtituloArquitetura {
+    color: #004c84 !important;
+    font-weight: 700;
+  }
+  
+  #destaque {
+    color: #004c84;
+    font-size: 2rem;
+  }
+  
+  #sobreCurso h2,
+  #sobreCurso h3 {
+    color: #004c84;
+    font-weight: 700;
+    font-family: "Cal Sans", sans-serif;
+  }
+  
+  #sobreCurso p,
+  #sobreCurso li {
+    font-family: "Karla", sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    text-align: justify;
+  }
+  
+  #sobreCurso .card {
+    background-color: #f8f9fa;
+    border-radius: 1rem;
+  }
+  
+  #imagemArquitetura img {
+    width: 80%;
+    max-width: 1000px;
+    height: 50rem;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  #footerArquitetura {
+    padding: 30px;
+    text-align: center;
+    background: linear-gradient(to bottom, #004c84, #053151, black);
+    color: #ffffff;
+  }
+  
+  #imagemFooter {
+    height: 4rem;
+    gap: 10px;
+  }
+  
+  h5 {
+    margin-bottom: 5px;
+    font-family: "Cal Sans", sans-serif;
+  }
+  
