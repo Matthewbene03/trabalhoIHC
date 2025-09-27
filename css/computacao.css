@@ -64,3 +64,87 @@
   height: 4rem;
   gap: 10px;
 }
+
+
+/* ========================================= */
+/* ESTILOS PARA O MODO DE ALTO CONTRASTE     */
+/* ========================================= */
+
+body.alto-contraste {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+.alto-contraste .bg-light {
+  background-color: #111 !important;
+}
+
+.alto-contraste h1,
+.alto-contraste h2,
+.alto-contraste h3,
+.alto-contraste h4,
+.alto-contraste h5,
+.alto-contraste p,
+.alto-contraste li,
+.alto-contraste strong,
+.alto-contraste span,
+.alto-contraste .titulo-curso,
+.alto-contraste .subtitulo-curso,
+.alto-contraste .frase-destaque,
+.alto-contraste .secao-sobre h2,
+.alto-contraste .secao-sobre h3 {
+  color: #fff !important;
+}
+
+/* Links agora são brancos, mas com sublinhado para se diferenciarem */
+.alto-contraste a, .alto-contraste .nav-link {
+  color: #fff !important;
+  text-decoration: underline !important;
+}
+
+.alto-contraste .card,
+.alto-contraste .list-group-item,
+.alto-contraste .alert-info {
+  background-color: #000 !important;
+  border: 1px solid #fff !important;
+}
+
+.alto-contraste .btn-primary {
+    background-color: #000 !important;
+    color: #fff !important;
+    border: 2px solid #fff !important;
+}
+
+.alto-contraste .btn-outline-dark {
+    color: #fff !important;
+    border-color: #fff !important;
+}
+
+.alto-contraste .footer-curso {
+    background: #000 !important;
+    border-top: 1px solid #fff;
+}
+
+/* Melhoria: Suaviza as imagens no modo contraste */
+.alto-contraste img {
+    opacity: 0.85;
+}
+
+/* Melhoria: Garante o foco visível no modo contraste */
+.alto-contraste a:focus,
+.alto-contraste button:focus {
+    outline: 3px solid rgb(255, 255, 255);
+    outline-offset: 2px;
+}
+
+/* Remove o sublinhado do botão no estado normal */
+.alto-contraste .btn-primary {
+    text-decoration: none !important;
+}
+
+/* Adiciona o efeito de hover: inverte as cores e adiciona o sublinhado */
+.alto-contraste .btn-primary:hover {
+    background-color: #fff !important; /* Fundo fica branco */
+    color: #000 !important;           /* Texto fica preto */
+    text-decoration: underline !important;
+}
