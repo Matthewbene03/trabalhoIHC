@@ -1,0 +1,66 @@
+/* Importando as fontes globais (se necessário) */
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+/* Estilos gerais da página de curso */
+.titulo-curso {
+  color: #004c84;
+}
+
+.subtitulo-curso {
+  color: #004c84;
+  font-weight: 700;
+}
+
+.frase-destaque {
+  color: #004c84;
+  font-size: 1.5rem; /* Ajustei um pouco o tamanho */
+}
+
+/* Estilos da Seção "Sobre" */
+.secao-sobre h2,
+.secao-sobre h3 {
+  color: #004c84;
+  font-weight: 700;
+  font-family: "Cal Sans", sans-serif;
+}
+
+.secao-sobre p,
+.secao-sobre li {
+  font-family: "Karla", sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.secao-sobre .card {
+  background-color: #f8f9fa;
+  border-radius: 1rem;
+}
+
+/* Estilo da Imagem de Destaque */
+.secao-imagem img {
+  width: 80%;
+  max-width: 1000px;
+  height: auto; /* Altura automática para não distorcer a imagem */
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Estilo do Rodapé */
+.footer-curso {
+  padding: 30px;
+  text-align: center;
+  background: linear-gradient(to bottom, #004c84, #053151, black);
+  color: #ffffff;
+}
+
+.footer-curso h5 {
+  margin-bottom: 5px;
+  font-family: "Cal Sans", sans-serif;
+}
+
+.imagem-footer {
+  height: 4rem;
+  gap: 10px;
+}
