@@ -1,3 +1,38 @@
+#BotoesZoom {
+    background-color: none;
+    position: fixed;
+    right: 15px;
+    top: 100px;
+}
+
+
+body #BotoesZoom div button {
+    cursor: pointer;
+    background-color: white;
+}
+
+body #BotoesZoom div button img#icone-maisAmarelo,
+body #BotoesZoom div button img#icone-menosAmarelo,
+body #BotoesZoom div button img#icone-lupaAmarelo{
+    display: none;
+}
+
+body.high-contrast #BotoesZoom div button img#icone-maisAzul,
+body.high-contrast #BotoesZoom div button img#icone-menosAzul,
+body.high-contrast #BotoesZoom div button img#icone-lupaAzul{
+    display: none;
+}
+
+body.high-contrast #BotoesZoom div button img#icone-maisAmarelo,
+body.high-contrast #BotoesZoom div button img#icone-menosAmarelo,
+body.high-contrast #BotoesZoom div button img#icone-lupaAmarelo{
+    display: inline;
+}
+
+body.high-contrast #BotoesZoom div button {
+    background-color: black;
+}
+
 section {
     min-height: 80vh;
     padding: 100px 5% 50px 5%;
@@ -12,12 +47,12 @@ section {
     background-color: black;
 }
 
-section:nth-child(even) {
+section:nth-of-type(odd) {
     background-color: #f5f5f5;
 }
 
 
-body.high-contrast section:nth-child(even) {
+body.high-contrast section:nth-of-type(odd) {
     background-color: grey;
 }
 
