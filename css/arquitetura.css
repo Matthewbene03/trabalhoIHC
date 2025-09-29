@@ -57,4 +57,92 @@
     margin-bottom: 5px;
     font-family: "Cal Sans", sans-serif;
   }
+
+  body.alto-contraste {
+    background-color: #000 !important;
+    color: #fff !important;
+  }
+  
+  .alto-contraste .bg-light {
+    background-color: #111 !important;
+  }
+  
+  .alto-contraste #tituloArquitetura,
+  .alto-contraste #subtituloArquitetura,
+  .alto-contraste #destaque,
+  .alto-contraste #sobreCurso h2,
+  .alto-contraste #sobreCurso h3,
+  .alto-contraste #sobreCurso p,
+  .alto-contraste #sobreCurso li,
+  .alto-contraste h1,
+  .alto-contraste h2,
+  .alto-contraste h3,
+  .alto-contraste h4,
+  .alto-contraste h5,
+  .alto-contraste p,
+  .alto-contraste li,
+  .alto-contraste strong,
+  .alto-contraste span {
+    color: #fff !important;
+  }
+  
+  .alto-contraste a,
+  .alto-contraste .nav-link {
+    color: #fff !important;
+    text-decoration: underline !important;
+  }
+  
+  .alto-contraste .card,
+  .alto-contraste .list-group-item,
+  .alto-contraste .alert-info {
+    background-color: #000 !important;
+    border: 1px solid #fff !important;
+  }
+  
+  .alto-contraste .btn-primary {
+    background-color: #000 !important;
+    color: #fff !important;
+    border: 2px solid #fff !important;
+    text-decoration: none !important;
+  }
+  
+  .alto-contraste .btn-primary:hover {
+    background-color: #fff !important;
+    color: #000 !important;
+    text-decoration: underline !important;
+  }
+  
+  .alto-contraste .btn-outline-dark {
+    color: #fff !important;
+   
+  }
+  
+  .alto-contraste #footerArquitetura {
+    background: #000 !important;
+    border-top: 1px solid #fff;
+  }
+  
+  .alto-contraste img {
+    opacity: 0.85;
+  }
+  
+  .alto-contraste a:focus,
+  .alto-contraste button:focus {
+    outline: 3px solid #fff;
+    outline-offset: 2px;
+  }
+
+#logo-cefetpreto {
+  display: none;
+}
+
+body.alto-contraste #logo-cefet {
+  display: none;
+}
+body.alto-contraste #logo-cefetpreto {
+  display: inline;
+}
+
+
+  
   

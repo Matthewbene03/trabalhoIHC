@@ -16,7 +16,8 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
     <div class="container-fluid">
       <a class="navbar-brand" href="../index.html">
-        <img src="../img/Logo_CEFET-MG.png" alt="Logo CEFET-MG" height="75">
+        <img id="logo-cefet" src="../img/Logo_CEFET-MG.png" alt="Logo CEFET-MG" height="75">
+        <img id="logo-cefetpreto" src="../img/logo_topo.png" alt="Logo CEFET-MG" height="45">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
@@ -24,8 +25,18 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="../index.html#home">Home</a></li>
+
+          <li class="nav-item">
+            <button id="btn-alto-contraste" class="btn ms-2" style="padding: 0; border: none;">
+              <img id="icone-contraste" src="../img/icone-contraste-lua.png" alt="Ativar modo de alto contraste"
+                width="32" height="32">
+            </button>
+          </li>
+
         </ul>
       </div>
+
+
     </div>
   </nav>
 
@@ -33,7 +44,7 @@
     <h1 class="display-4 fw-bold" id="tituloArquitetura">Arquitetura e Urbanismo</h1>
   </header>
 
- 
+
   <main class="container">
 
     <section class="my-5" id="sobreCurso">
@@ -167,6 +178,9 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/index.js"></script>
+  <script src="../js/arquitetura.js"></script>
+
 </body>
 
 </html>

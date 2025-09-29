@@ -148,3 +148,16 @@ body.alto-contraste {
     color: #000 !important;           /* Texto fica preto */
     text-decoration: underline !important;
 }
+
+  /* Por padrão: mostra logo clara, esconde a escura */
+  #logo-cefetpreto {
+    display: none;
+  }
+  
+  /* Quando o alto contraste estiver ativo: inverte */
+  body.alto-contraste #logo-cefet {
+    display: none;
+  }
+  body.alto-contraste #logo-cefetpreto {
+    display: inline;
+  }
