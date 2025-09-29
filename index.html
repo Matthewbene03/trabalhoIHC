@@ -8,24 +8,34 @@
     <link rel="stylesheet" href="./css/navMenu.css">
     <link rel="stylesheet" href="./css/class.css">
     <link rel="stylesheet" href="./css/tag.css">
+
     <link rel="shortcut icon" href="./img/Logo_CEFET-MG.png" type="image/x-icon">
     <title>CEFET/MG - Timoteo</title>
 </head>
 
-<body>
+<body id="body">
     <!--Divisão da pagina-->
     <!--Vai ter a parte principal, parte para arquitetura, computação e metalurgica. A ideia é fazer os dos três cursos iguias, mas com informações referentes ao curso-->
     <!--Construção do menu de navegação. Esse pode ser usado nas quatros paginas-->
 
-    <nav class="marginLeftRigth5Porc">
+    <nav id="navMenuPrincipal" class="marginLeftRigth5Porc">
         <div class="logo">
-            <img src="img/Logo_CEFET-MG.png">
+            <img id="logoAzul" src="img/Logo_CEFET-MG.png" alt="Logotipo do CEFET-MG, Campus Timóteo.">
+            <img id="logoPreta" src="img/logo_topo.png" alt="Logotipo do CEFET-MG, Campus Timóteo.">
         </div>
         <div class="links">
             <a href="#home" class="link_a_navMenu">Home</a>
             <a href="#arquitetura" class="link_a_navMenu">Arquitetura</a>
             <a href="#computacao" class="link_a_navMenu">Computação</a>
             <a href="#metalurgica" class="link_a_navMenu">Metalurgica</a>
+        </div>
+        <div class="btnAltoContraste">
+            <button id="btn-alto-contraste" class="btn ms-2" style="padding: 0; border: none;" onclick="mudarContraste()">
+                <img id="icone-lua" src="./img/lua-crescente.png" alt="Ativar modo de alto contraste" width="32"
+                    height="32">
+                <img id="icone-sol" src="./img/sol.png" alt="Ativar modo de alto contraste" width="32"
+                    height="32">
+            </button>
         </div>
     </nav>
 
@@ -51,7 +61,8 @@
                 do CEFET</a>
         </div>
         <div class="sectionImg" id="homeImg">
-            <img src="./img/Logo_CEFET-MG1.png" alt="Logotipo do CEFET/MG - Campus Timóteo.">
+            <img class="logoAzul" src="./img/Logo_CEFET-MG1.png" alt="Logotipo do CEFET/MG - Campus Timóteo.">
+            <img class="logoPreto" src="./img/logo_topo.png" alt="Logotipo do CEFET/MG - Campus Timóteo.">
         </div>
     </section>
 
@@ -118,13 +129,16 @@
         </div>
         <div class="footer-icons">
             <a href="https://www.arquitetura-urbanismo.timoteo.cefetmg.br/" target="_blank">
-                <span><img src="./img/arquiteturaIcones2.png" alt="Graduação de Arquitetura" title="Graduação de Arquitetura"></span>
+                <span><img src="./img/arquiteturaIcones2.png" alt="Graduação de Arquitetura"
+                        title="Graduação de Arquitetura"></span>
             </a>
             <a href="https://www.eng-computacao.timoteo.cefetmg.br/" target="_blank">
-                <span><img src="./img/computacaoIcones2.png" alt="Graduação de Engenharia da Computação" title="Graduação de Engenharia da Computação"></span>
+                <span><img src="./img/computacaoIcones2.png" alt="Graduação de Engenharia da Computação"
+                        title="Graduação de Engenharia da Computação"></span>
             </a>
             <a href="https://www.eng-metalurgica.timoteo.cefetmg.br/informacoes-do-curso/" target="_blank">
-                <span><img src="./img/metalurgiaIcones1.png" alt="Graduação de Engenharia Matalurgica" title="Graduação de Engenharia Matalurgica"></span>
+                <span><img src="./img/metalurgiaIcones1.png" alt="Graduação de Engenharia Matalurgica"
+                        title="Graduação de Engenharia Matalurgica"></span>
             </a>
         </div>
         <div class="footer-copy">
@@ -133,6 +147,9 @@
             </p>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/paginaPrincipal.js"></script>
 
 </body>
 

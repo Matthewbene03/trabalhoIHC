@@ -3,7 +3,6 @@ nav {
     flex-wrap: nowrap;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
 
     position: fixed;
     top: 0;
@@ -13,8 +12,9 @@ nav {
     height: 70px;
 }
 
-nav div.logo{
+nav div.logo {
     height: 100%;
+    flex: 20%;
 }
 
 nav div.logo h1 {
@@ -25,11 +25,25 @@ nav div.logo h1 {
     color: black;
 }
 
-nav div.logo img {
+nav div.logo #logoAzul {
     max-height: 100%;
     max-width: 100%;
     height: auto;
     width: auto;
+}
+
+nav div.logo #logoPreta {
+    display: none;
+}
+
+nav div.links {
+    height: 100%;
+
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .link_a_navMenu {
@@ -46,8 +60,61 @@ nav div.logo img {
     border-bottom: 2px solid #004c84;
 }
 
+#btn-alto-contraste{
+    cursor: pointer;
+    background-color: white;
+}
+
+nav div.btnAltoContraste #icone-sol{
+    display: none;
+}
+
+.navMenuBlack div.btnAltoContraste #icone-lua{
+    display: inline;
+}
+
+.navMenuBlack {
+    background-color: black;
+}
+
+.navMenuBlack div.logo #logoPreta {
+    display: inline;
+    max-height: 100%;
+    max-width: 100%;
+    height: 100%;
+    width: auto;
+    padding: 10px 0px;
+}
+
+.navMenuBlack div.logo #logoAzul {
+    display: none;
+}
+
+.navMenuBlack div.links .link_a_navMenu {
+    color: white;
+}
+
+.navMenuBlack div.links .link_a_navMenu:hover {
+    border-bottom: 2px solid white;
+}
+
+.navMenuBlack div.btnAltoContraste #icone-sol{
+    display: inline;
+    background-color: black;
+    border: none;
+}
+
+.navMenuBlack div.btnAltoContraste #icone-lua{
+    display: none;
+}
+
+.navMenuBlack div.btnAltoContraste #btn-alto-contraste{
+    cursor: pointer;
+    background-color: black;
+}
+
 @media (max-width: 900px) {
-    nav div.links{
+    nav div.links {
         display: none;
     }
 }

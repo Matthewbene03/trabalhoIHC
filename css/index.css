@@ -5,10 +5,20 @@ section {
     align-items: center;
     justify-content: center;
     gap: 40px;
+    border-radius: 10px;
+}
+
+.bodyBlack {
+    background-color: black;
 }
 
 section:nth-child(even) {
     background-color: #f5f5f5;
+}
+
+
+body.high-contrast section:nth-child(even) {
+    background-color: grey;
 }
 
 .estruturaSection {
@@ -38,6 +48,18 @@ section:nth-child(even) {
     text-align: left;
 }
 
+body.high-contrast .sectionTexto h1,
+body.high-contrast .sectionTexto h2 {
+    color: #ffffff;
+}
+
+body.high-contrast .sectionTexto p {
+    font-family: "Karla", sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
 .sectionTexto p {
     font-family: "Karla", sans-serif;
     font-size: 18px;
@@ -45,11 +67,23 @@ section:nth-child(even) {
     line-height: 1.6;
 }
 
+body section div#homeImg .logoPreto {
+    display: none;
+}
+
+body.high-contrast section div#homeImg .logoAzul {
+    display: none;
+}
+
+body.high-contrast section div#homeImg .logoPreto {
+    display: inline;
+}
+
 .sectionImg {
     flex: 50%;
     text-align: center;
     min-height: 300px;
-    max-width: 500px; 
+    max-width: 500px;
 }
 
 .sectionImg img {
@@ -57,25 +91,25 @@ section:nth-child(even) {
     width: 100%;
     height: auto;
     border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 #homeImg {
     flex: 50%;
     text-align: center;
     display: flex;
-    align-items: center; 
-    justify-content: center; 
+    align-items: center;
+    justify-content: center;
 }
 
 #homeImg img {
     max-width: 400px;
     height: auto;
-    
-    border-radius: 0; 
+
+    border-radius: 0;
     box-shadow: none;
-    
-    object-fit: contain; 
+
+    object-fit: contain;
 }
 
 #btnSiteCefet,
@@ -100,6 +134,28 @@ section:nth-child(even) {
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
+body.high-contrast #btnSiteCefet,
+body.high-contrast .btnMaisInformacoesCurso {
+    font-family: "Karla", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #2b2b2b;
+    background-color: #ffffff;
+    padding: 12px 25px;
+    margin-top: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease-in-out;
+}
+
+body.high-contrast #btnSiteCefet:hover,
+body.high-contrast .btnMaisInformacoesCurso:hover {
+    background-color: rgb(228, 228, 228);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
 footer {
     display: flex;
     flex-direction: column;
@@ -114,6 +170,20 @@ footer {
     margin-top: 50px;
 }
 
+body.high-contrast footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+
+    padding: 30px;
+    text-align: center;
+    background: linear-gradient(to bottom, rgb(228, 228, 228), grey, rgb(43, 42, 42));
+    color: white;
+    margin-top: 50px;
+}
+
 footer.criativo {
     display: flex;
     flex-direction: column;
@@ -121,7 +191,7 @@ footer.criativo {
     gap: 10px;
 }
 
-footer.criativo p{
+footer.criativo p {
     font-family: "Karla", sans-serif;
 }
 
@@ -131,11 +201,11 @@ footer.criativo .footer-icons {
     gap: 15px;
 }
 
-.footer-icons{
+.footer-icons {
     height: 80px;
 }
 
-.footer-icons img{
+.footer-icons img {
     height: 100%;
 }
 
