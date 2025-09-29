@@ -56,9 +56,25 @@ body.high-contrast section:nth-of-type(odd) {
     background-color: grey;
 }
 
+a:focus,
+button:focus,
+input:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgb(255, 0, 0);
+  border-radius: 8px;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+body.high-contrast a:focus,
+body.high-contrast button:focus,
+body.high-contrast input:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px yellow; 
+}
+
 .estruturaSection {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -67,6 +83,7 @@ body.high-contrast section:nth-of-type(odd) {
 
 .sectionTexto {
     flex: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -78,7 +95,7 @@ body.high-contrast section:nth-of-type(odd) {
 .sectionTexto h2 {
     font-family: "Cal Sans", sans-serif;
     font-weight: 400;
-    font-size: 60px;
+    font-size: 3.75rem;
     color: #004c84;
     text-align: left;
 }
@@ -90,14 +107,14 @@ body.high-contrast .sectionTexto h2 {
 
 body.high-contrast .sectionTexto p {
     font-family: "Karla", sans-serif;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #ffffff;
     line-height: 1.6;
 }
 
 .sectionTexto p {
     font-family: "Karla", sans-serif;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #333;
     line-height: 1.6;
 }
@@ -118,7 +135,7 @@ body.high-contrast section div#homeImg .logoPreto {
     flex: 50%;
     text-align: center;
     min-height: 300px;
-    max-width: 500px;
+    max-width: 25rem;
 }
 
 .sectionImg img {
@@ -150,7 +167,7 @@ body.high-contrast section div#homeImg .logoPreto {
 #btnSiteCefet,
 .btnMaisInformacoesCurso {
     font-family: "Karla", sans-serif;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 600;
     text-decoration: none;
     color: #fff;
