@@ -10,7 +10,7 @@ nav {
     left: 0;
     right: 0;
     background-color: white;
-    height: 75px;
+    height: 70px;
 }
 
 nav div.logo{
@@ -44,4 +44,10 @@ nav div.logo img {
 
 .link_a_navMenu:hover {
     border-bottom: 2px solid #004c84;
+}
+
+@media (max-width: 900px) {
+    nav div.links{
+        display: none;
+    }
 }
