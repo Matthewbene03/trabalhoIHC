@@ -17,11 +17,12 @@ let base = 16; // valor inicial
 
 // Substitua sua função mudarContraste por esta:
 function mudarContraste() {
-    navMenu.classList.toggle("navMenuBlack");
-    body.classList.toggle('bodyBlack');
-    document.body.classList.toggle("high-contrast");
-    console.log("Mudou!")
-    body.classList.toggle('high-contrast');    
+
+    // Apenas alterna a classe principal no body
+    body.classList.toggle('high-contrast');
+    navMenu.classList.toggle('navMenuBlack');
+    
+    // Salva o estado atual (true ou false) no localStorage
     localStorage.setItem('altoContrasteAtivo', body.classList.contains('high-contrast'));
 }
 

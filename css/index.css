@@ -5,6 +5,9 @@
     top: 100px;
 }
 
+body #BotoesZoom div{
+    margin: 7px 0px;
+}
 
 body #BotoesZoom div button {
     cursor: pointer;
@@ -273,7 +276,7 @@ body.high-contrast #BotoesZoom div button img#icone-lupaAmarelo {
 
 /* Cor das seções alternadas: uma cinza escura e outra preta */
 body.high-contrast section:nth-of-type(odd) {
-    background-color: #1a1a1a; /* Um cinza bem escuro */
+    background-color: #262626; /* Um cinza bem escuro */
 }
 body.high-contrast section:nth-of-type(even) {
     background-color: #000; /* Preto para combinar com o fundo */
@@ -284,7 +287,7 @@ body.high-contrast a:focus,
 body.high-contrast button:focus,
 body.high-contrast input:focus {
     outline: none;
-    box-shadow: 0 0 0 4px yellow;
+    box-shadow: 0 0 0 4px rgb(255, 255, 255);
 }
 
 /* Garante que títulos e parágrafos fiquem brancos */
@@ -317,11 +320,6 @@ body.high-contrast .btnMaisInformacoesCurso:hover {
 }
 
 /* Rodapé com fundo preto sólido para melhor contraste */
-body.high-contrast footer {
-    background: #000000;
-    color: white;
-    border-top: 2px solid white;
-}
 
 
 
