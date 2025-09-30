@@ -15,6 +15,7 @@
 
 <body>
 
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
         <div class="container-fluid">
             <a class="navbar-brand" href="../index.html">
@@ -27,10 +28,10 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="../index.html#home">Home</a></li>
-
                     <li class="nav-item">
                         <button id="btn-alto-contraste" class="btn ms-2" style="padding: 0; border: none;">
-                            <img id="icone-contraste" src="../img/icone-contraste-lua.png" alt="Ativar modo de alto contraste" width="32" height="32">
+                            <img id="icone-contraste" src="../img/icone-contraste-lua.png"
+                                alt="Ativar modo de alto contraste" width="32" height="32">
                         </button>
                     </li>
                 </ul>
@@ -38,19 +39,41 @@
         </div>
     </nav>
 
+    <!-- Botões flutuantes de acessibilidade -->
+    <div id="BotoesZoom">
+        <!-- Botão de aumentar fonte -->
+        <button id="btn-font-plus" title="Aumentar fonte">
+            <img class="icone-azul" src="../img/mais-zoomAzul.png" alt="Aumentar fonte">
+            <img class="icone-amarelo" src="../img/mais-zoomAmarelo.png" alt="Aumentar fonte">
+        </button>
+
+        <!-- Botão de diminuir fonte -->
+        <button id="btn-font-minus" title="Diminuir fonte">
+            <img class="icone-azul" src="../img/reduzir-o-zoomAzul.png" alt="Diminuir fonte">
+            <img class="icone-amarelo" src="../img/reduzir-o-zoomAmarelo.png" alt="Diminuir fonte">
+        </button>
+    </div>
+
+
+
+
+
+    <!-- Header -->
     <header class="container text-center py-5" style="margin-top: 80px;">
         <h1 class="display-4 fw-bold titulo-curso">Engenharia Metalúrgica</h1>
     </header>
 
     <main class="container">
 
+        <!-- Sobre o Curso -->
         <section class="my-5 secao-sobre">
             <div class="container">
                 <h2 class="h3 fw-bold mb-4 subtitulo-curso">Sobre o Curso</h2>
                 <p class="lead">
-                    O curso de Engenharia Metalúrgica do CEFET/MG Campus Timóteo capacita profissionais para atuar no desenvolvimento, produção e transformação de metais e ligas metálicas. A graduação oferece uma sólida base teórica e prática em áreas como a ciência dos materiais, termodinâmica, física e química, preparando os estudantes para inovar e solucionar problemas na indústria e na pesquisa.
-
-                    O objetivo do curso é formar engenheiros com uma visão ampla e crítica, prontos para atuar em todas as etapas da cadeia produtiva, desde o beneficiamento de minérios até o produto final, de forma eficiente e sustentável.
+                    O curso de Engenharia Metalúrgica do CEFET/MG Campus Timóteo capacita profissionais para atuar no
+                    desenvolvimento, produção e transformação de metais e ligas metálicas. A graduação oferece uma sólida
+                    base teórica e prática em áreas como a ciência dos materiais, termodinâmica, física e química,
+                    preparando os estudantes para inovar e solucionar problemas na indústria e na pesquisa.
                 </p>
                 <p class="mt-3">
                     As áreas de atuação do profissional incluem:
@@ -60,8 +83,8 @@
                     <div class="card-body">
                         <h3 class="h5 fw-bold">Áreas de Atuação</h3>
                         <p>
-                            O engenheiro metalúrgico pode atuar em indústrias siderúrgicas, mineração, automotiva, aeroespacial,
-                            biomateriais e pesquisa de novos materiais.
+                            O engenheiro metalúrgico pode atuar em indústrias siderúrgicas, mineração, automotiva,
+                            aeroespacial, biomateriais e pesquisa de novos materiais.
                         </p>
                     </div>
                 </div>
@@ -82,19 +105,22 @@
             </div>
         </section>
 
+        <!-- Página oficial -->
         <section class="text-center my-5">
-            <a href="https://www.eng-metalurgica.timoteo.cefetmg.br/" target="_blank" class="btn btn-primary btn-lg shadow">
+            <a href="https://www.eng-metalurgica.timoteo.cefetmg.br/" target="_blank"
+                class="btn btn-primary btn-lg shadow">
                 Visite a Página Oficial do Curso
             </a>
         </section>
 
-
+        <!-- Destaque ingresso -->
         <div class="text-center my-5">
             <p class="lead fw-bold bg-light border rounded p-3 d-inline-block shadow-sm frase-destaque">
                 Existem duas formas principais de ingresso no curso de Engenharia Metalúrgica do CEFET-MG, campus Timóteo!
             </p>
         </div>
 
+        <!-- SiSU -->
         <section class="my-5">
             <h2 class="h3 subtitulo-curso mb-3">1. Sistema de Seleção Unificada (SiSU)</h2>
             <p>O ingresso ocorre principalmente pelo SiSU, utilizando a nota do Enem.</p>
@@ -106,6 +132,7 @@
             </ul>
         </section>
 
+        <!-- Vagas remanescentes -->
         <section class="my-5">
             <h2 class="h3 subtitulo-curso mb-3">2. Processos Seletivos para Vagas Remanescentes</h2>
             <p>Após o processo do SiSU, caso sobrem vagas, o CEFET-MG publica editais específicos. As modalidades mais comuns são:</p>
@@ -116,16 +143,20 @@
             </ul>
         </section>
 
+        <!-- Imagem ilustrativa -->
         <section class="text-center secao-imagem">
-            <img src="../img/metalurgia.jpg" class="img-fluid rounded shadow" alt="Imagem que representa a Engenharia Metalúrgica, mostrando equipamentos de laboratório ou indústria.">
+            <img src="../img/metalurgia.jpg" class="img-fluid rounded shadow"
+                alt="Imagem que representa a Engenharia Metalúrgica, mostrando equipamentos de laboratório ou indústria.">
         </section>
 
+        <!-- Aviso -->
         <section class="alert alert-info my-5">
             <p class="mb-0">Para acompanhar essas modalidades, é importante verificar regularmente o site oficial do CEFET-MG Timóteo e da COPEVE, onde os editais são divulgados.</p>
         </section>
 
     </main>
 
+    <!-- Footer -->
     <footer class="text-center py-4 mt-5 footer-curso">
         <div class="container">
             <h5 class="fw-bold">CEFET/MG Timóteo</h5>
@@ -145,8 +176,11 @@
         </div>
     </footer>
 
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../js/index.js"></script>
+    <script src="../js/metalurgia.js"></script>
+
 </body>
 
 </html>

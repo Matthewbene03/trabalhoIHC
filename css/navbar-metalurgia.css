@@ -1,19 +1,27 @@
+/* Navbar principal */
 .navbar {
     height: 75px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .navbar-nav {
-    margin-right: 150px;
+    margin-right: 80px; /* ajustado para melhor alinhamento */
+    display: flex;
+    align-items: center;
 }
 
+/* Marca/Logo */
 .navbar .navbar-brand {
-    margin-left: 80px;
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
 }
 
-
+/* Links */
 .navbar .nav-link {
     font-family: "Karla", sans-serif;
     font-style: normal;
@@ -22,14 +30,79 @@
     font-size: 18px;
     padding: 8px 10px;
     font-weight: 700;
-    transition: border-bottom 0.2s ease-in-out;
+    transition: border-bottom 0.2s ease-in-out, color 0.2s;
     margin: 0 5px;
 }
 
-.navbar .nav-link:hover {
-    border-bottom: 2px solid #004c84;
-}
-
+.navbar .nav-link:hover,
 .navbar .nav-link.active {
     border-bottom: 2px solid #004c84;
+    color: #002d55 !important;
+}
+
+/* Botões de contraste e fonte */
+.navbar .btn {
+    font-weight: 700;
+    font-size: 16px;
+    margin-left: 5px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.navbar .btn-outline-dark {
+    border: 1px solid #004c84;
+    color: #004c84;
+}
+
+.navbar .btn-outline-dark:hover {
+    background-color: #004c84;
+    color: #fff;
+}
+
+/* Ajuste para ícones (alto contraste) */
+#icone-contraste {
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+#icone-contraste:hover {
+    transform: scale(1.1);
+}
+
+/* Responsividade para navbar e ícones */
+@media (max-width: 992px) {
+    .navbar {
+        flex-wrap: wrap; /* Permite que os itens se ajustem */
+        padding: 0 15px;
+        height: auto; /* Ajusta a altura automaticamente */
+    }
+
+    .navbar .navbar-brand {
+        margin-left: 0;
+        flex: 1 1 auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar-nav {
+        margin-right: 0;
+        flex: 1 1 100%; /* Ocupa toda a largura disponível */
+        justify-content: flex-end;
+        margin-top: 8px; /* Pequeno espaçamento abaixo da logo */
+    }
+
+    /* Ícones da navbar (Lua/Rome/Contraste) */
+    #icone-contraste,
+    .navbar-icons img {
+        width: 28px;  /* Ajuste de tamanho */
+        height: 28px;
+        margin-left: 10px;
+        vertical-align: middle;
+    }
+
+    /* Ajusta links para caberem no mobile */
+    .navbar .nav-link {
+        font-size: 16px;
+        padding: 6px 8px;
+        margin: 0 3px;
+    }
 }
