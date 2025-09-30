@@ -1,5 +1,3 @@
-// --- LÓGICA PARA O ALTO CONTRASTE ---
-
 document.addEventListener('DOMContentLoaded', function() {
     
     const contrasteButton = document.getElementById('btn-alto-contraste');

@@ -112,11 +112,6 @@
     text-decoration: underline !important;
   }
   
-  .alto-contraste .btn-outline-dark {
-    color: #fff !important;
-   
-  }
-  
   .alto-contraste #footerArquitetura {
     background: #000 !important;
     border-top: 1px solid #fff;
@@ -142,10 +137,6 @@ body.alto-contraste #logo-cefet {
 body.alto-contraste #logo-cefetpreto {
   display: inline;
 }
-
-  /* ========================================= */
-/* ESTILOS PARA OS BOTÕES FLUTUANTES DE ZOOM */
-/* ========================================= */
 
 #BotoesZoom {
   position: fixed;
@@ -176,20 +167,18 @@ body.alto-contraste #logo-cefetpreto {
 }
 
 #BotoesZoom button img {
-  width: 100%; /* Imagens ocupam todo o botão */
+  width: 100%;
   height: 100%;
 }
 
-/* Lógica para mostrar/esconder ícones azul vs. amarelo */
 #BotoesZoom .icone-amarelo { display: none; }
 #BotoesZoom .icone-azul { display: block; }
 
 body.alto-contraste #BotoesZoom .icone-amarelo { display: block; }
 body.alto-contraste #BotoesZoom .icone-azul { display: none; }
 
-/* Botão hambúrguer no modo alto contraste */
 body.alto-contraste .navbar-toggler {
-  border-color: #fff; /* borda branca */
+  border-color: #fff;
 }
 
 body.alto-contraste .navbar-toggler-icon {

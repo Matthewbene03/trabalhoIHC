@@ -1,7 +1,5 @@
-/* Importando as fontes globais (se necessário) */
 @import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
 
-/* Estilos gerais da página de curso */
 .titulo-curso {
   color: #004c84;
 }
@@ -17,7 +15,6 @@
   /* Ajustei um pouco o tamanho */
 }
 
-/* Estilos da Seção "Sobre" */
 .secao-sobre h2,
 .secao-sobre h3 {
   color: #004c84;
@@ -38,18 +35,15 @@
   border-radius: 1rem;
 }
 
-/* Estilo da Imagem de Destaque */
 .secao-imagem img {
   width: 80%;
   max-width: 1000px;
   height: auto;
-  /* Altura automática para não distorcer a imagem */
   object-fit: cover;
   display: block;
   margin: 0 auto;
 }
 
-/* Estilo do Rodapé */
 .footer-curso {
   padding: 30px;
   text-align: center;
@@ -64,13 +58,12 @@
 
 .imagem-footer {
   height: 4rem;
-  gap: 10px;
 }
 
 
-/* ========================================= */
-/* ESTILOS PARA O MODO DE ALTO CONTRASTE     */
-/* ========================================= */
+
+/* DAQUI PRA BAIXO É O MODO DE ALTO CONTRASTE*/
+
 
 body.alto-contraste {
   background-color: #000 !important;
@@ -98,7 +91,6 @@ body.alto-contraste {
   color: #fff !important;
 }
 
-/* Links agora são brancos, mas com sublinhado para se diferenciarem */
 .alto-contraste a,
 .alto-contraste .nav-link {
   color: #fff !important;
@@ -118,48 +110,35 @@ body.alto-contraste {
   border: 2px solid #fff !important;
 }
 
-.alto-contraste .btn-outline-dark {
-  color: #fff !important;
-  border-color: #fff !important;
-}
-
 .alto-contraste .footer-curso {
   background: #000 !important;
   border-top: 1px solid #fff;
 }
 
-/* Melhoria: Suaviza as imagens no modo contraste */
 .alto-contraste img {
   opacity: 0.85;
 }
 
-/* Melhoria: Garante o foco visível no modo contraste */
 .alto-contraste a:focus,
 .alto-contraste button:focus {
   outline: 3px solid rgb(255, 255, 255);
   outline-offset: 2px;
 }
 
-/* Remove o sublinhado do botão no estado normal */
 .alto-contraste .btn-primary {
   text-decoration: none !important;
 }
 
-/* Adiciona o efeito de hover: inverte as cores e adiciona o sublinhado */
 .alto-contraste .btn-primary:hover {
   background-color: #fff !important;
-  /* Fundo fica branco */
   color: #000 !important;
-  /* Texto fica preto */
   text-decoration: underline !important;
 }
 
-/* Por padrão: mostra logo clara, esconde a escura */
 #logo-cefetpreto {
   display: none;
 }
 
-/* Quando o alto contraste estiver ativo: inverte */
 body.alto-contraste #logo-cefet {
   display: none;
 }
@@ -168,7 +147,6 @@ body.alto-contraste #logo-cefetpreto {
   display: inline;
 }
 
-/* Botão hambúrguer no modo alto contraste */
 body.alto-contraste .navbar-toggler {
   border-color: #fff;
   /* borda branca */
@@ -178,9 +156,9 @@ body.alto-contraste .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-/* ========================================= */
-/* ESTILOS PARA OS BOTÕES FLUTUANTES DE ZOOM */
-/* ========================================= */
+
+/* DAQUI PARA BAIXO SÃO OS BOTÕES DE ZOOM */
+
 
 #BotoesZoom {
   position: fixed;
@@ -212,11 +190,9 @@ body.alto-contraste .navbar-toggler-icon {
 
 #BotoesZoom button img {
   width: 100%;
-  /* Imagens ocupam todo o botão */
   height: 100%;
 }
 
-/* Lógica para mostrar/esconder ícones azul vs. amarelo */
 #BotoesZoom .icone-amarelo {
   display: none;
 }
