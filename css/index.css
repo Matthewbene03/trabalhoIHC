@@ -266,6 +266,81 @@ footer.criativo h3 {
     font-family: "Cal Sans", sans-serif;
 }
 
+/* Regra principal que faltava: fundo preto e texto branco para a página inteira */
+body.high-contrast {
+    background-color: black;
+    color: white;
+}
+
+/* Estilo dos botões de Zoom no modo escuro */
+body.high-contrast #BotoesZoom div button {
+    background-color: black;
+}
+body.high-contrast #BotoesZoom div button img#icone-maisAzul,
+body.high-contrast #BotoesZoom div button img#icone-menosAzul,
+body.high-contrast #BotoesZoom div button img#icone-lupaAzul {
+    display: none;
+}
+body.high-contrast #BotoesZoom div button img#icone-maisAmarelo,
+body.high-contrast #BotoesZoom div button img#icone-menosAmarelo,
+body.high-contrast #BotoesZoom div button img#icone-lupaAmarelo {
+    display: inline;
+}
+
+/* Cor das seções alternadas: uma cinza escura e outra preta */
+body.high-contrast section:nth-of-type(odd) {
+    background-color: #1a1a1a; /* Um cinza bem escuro */
+}
+body.high-contrast section:nth-of-type(even) {
+    background-color: #000; /* Preto para combinar com o fundo */
+}
+
+/* Foco amarelo para melhor visibilidade no modo escuro */
+body.high-contrast a:focus,
+body.high-contrast button:focus,
+body.high-contrast input:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px yellow;
+}
+
+/* Garante que títulos e parágrafos fiquem brancos */
+body.high-contrast .sectionTexto h1,
+body.high-contrast .sectionTexto h2 {
+    color: #ffffff;
+}
+body.high-contrast .sectionTexto p {
+    color: #ffffff;
+}
+
+/* Troca dos logos no modo escuro */
+body.high-contrast section div#homeImg .logoAzul {
+    display: none;
+}
+body.high-contrast section div#homeImg .logoPreto {
+    display: inline;
+}
+
+/* Estilo dos botões de "Mais Informações" no modo escuro */
+body.high-contrast #btnSiteCefet,
+body.high-contrast .btnMaisInformacoesCurso {
+    color: #000000; /* Texto preto */
+    background-color: #ffffff; /* Fundo branco */
+    border: 2px solid white;
+}
+body.high-contrast #btnSiteCefet:hover,
+body.high-contrast .btnMaisInformacoesCurso:hover {
+    background-color: rgb(228, 228, 228);
+}
+
+/* Rodapé com fundo preto sólido para melhor contraste */
+body.high-contrast footer {
+    background: #000000;
+    color: white;
+    border-top: 2px solid white;
+}
+
+
+
 @media (max-width: 900px) {
     .estruturaSection {
         flex-direction: column;

@@ -17,13 +17,23 @@ const minImg = 200;
 let html = document.documentElement;
 let base = 16; // valor inicial
 
+// Substitua sua função mudarContraste por esta:
 function mudarContraste() {
-    navMenu.classList.toggle("navMenuBlack");
-    body.classList.toggle('bodyBlack');
-    document.body.classList.toggle("high-contrast");
-    h1.classList.toggle('tituloBlack');
-    document.h2.classList.toggle('tituloBlack');
-    console.log("Mudou!")
+    // Apenas alterna a classe principal no body
+    body.classList.toggle('high-contrast');
+    
+    // Salva o estado atual (true ou false) no localStorage
+    localStorage.setItem('altoContrasteAtivo', body.classList.contains('high-contrast'));
+}
+
+function carregarPreferenciaContraste() {
+    // Verifica se o valor salvo no localStorage é 'true'
+    const altoContrasteAtivo = localStorage.getItem('altoContrasteAtivo') === 'true';
+
+    // Se estava ativo, chama a função mudarContraste() para aplicar os estilos
+    if (altoContrasteAtivo) {
+        mudarContraste();
+    }
 }
 
 function aumentarFonteTexto() {
@@ -35,3 +45,6 @@ function diminuirFonteTexto() {
     base = Math.max(base - 2, 10); // limite mínimo 10px base
     html.style.fontSize = base + "px";
 }
+
+// Adicione esta linha no final do seu arquivo JS
+document.addEventListener('DOMContentLoaded', carregarPreferenciaContraste);
