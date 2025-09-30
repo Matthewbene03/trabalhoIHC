@@ -8,7 +8,6 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="shortcut icon" href="../img/Logo_CEFET-MG.png" type="image/x-icon">
-
   <link rel="stylesheet" href="../css/navbar-computacao.css">
   <link rel="stylesheet" href="../css/computacao.css">
 </head>
@@ -40,6 +39,19 @@
     </div>
   </nav>
 
+  <div id="BotoesZoom">
+    <button id="btn-font-plus" title="Aumentar fonte">
+        <img class="icone-azul" src="../img/mais-zoomAzul.png" alt="Aumentar fonte">
+        <img class="icone-amarelo" src="../img/mais-zoomAmarelo.png" alt="Aumentar fonte">
+    </button>
+
+    <button id="btn-font-minus" title="Diminuir fonte">
+        <img class="icone-azul" src="../img/reduzir-o-zoomAzul.png" alt="Diminuir fonte">
+        <img class="icone-amarelo" src="../img/reduzir-o-zoomAmarelo.png" alt="Diminuir fonte">
+    </button>
+</div>
+
+
   <header class="container text-center py-5" style="margin-top: 80px;">
     <h1 class="display-4 fw-bold titulo-curso">Engenharia de Computação</h1>
   </header>
@@ -48,49 +60,54 @@
   <main class="container">
 
     <section class="my-5 secao-sobre">
-      <div class="container">
+    <div class="container">
         <h2 class="h3 fw-bold mb-4">Sobre o Curso</h2>
         <p class="lead">
-          O curso de Engenharia de Computação forma profissionais capacitados para projetar e construir sistemas de
-          hardware e software...
+            O curso de Engenharia de Computação do CEFET-MG, campus Timóteo, forma profissionais com sólida base teórica e prática para atuar tanto no processo produtivo quanto no desenvolvimento técnico e científico do país. É uma área que busca soluções para os mais variados setores da sociedade, integrando conhecimentos de software e hardware.
         </p>
 
         <p class="mt-3">
-          O curso se baseia em pilares fundamentais, como:
+          Com duração de cinco anos, a graduação se baseia em quatro vertentes principais:
         </p>
 
         <div class="card shadow-sm border-0 my-4">
-          <div class="card-body">
-            <h3 class="h5 fw-bold">Desenvolvimento de Software</h3>
-            <p>
-              Os alunos aprendem a programar em diversas linguagens, desenvolver algoritmos complexos, criar sistemas
-              web, aplicativos móveis e muito mais.
-            </p>
-          </div>
+            <div class="card-body">
+                <h3 class="h5 fw-bold">Engenharia de Software</h3>
+                <p>É o pilar focado na construção de sistemas complexos e de qualidade. Inclui matérias como:</p>
+                <ul>
+                    <li><strong>Algoritmos e Estruturas de Dados:</strong> A base para resolver problemas computacionais de forma eficiente.</li>
+                    <li><strong>Linguagens de Programação:</strong> Aprendizado de diversas linguagens para diferentes finalidades.</li>
+                    <li><strong>Desenvolvimento de Sistemas:</strong> Desenvolvimento de sites, sistemas online e aplicativos para dispositivos móveis.</li>
+                    <li><strong>Banco de Dados:</strong> Modelagem e gerenciamento de grandes volumes de informação.</li>
+                </ul>
+            </div>
         </div>
 
         <div class="card shadow-sm border-0 my-4">
-          <div class="card-body">
-            <h3 class="h5 fw-bold">Hardware e Sistemas Embarcados</h3>
-            <p>
-              Este pilar aborda a arquitetura de computadores, circuitos digitais e o desenvolvimento de sistemas que
-              integram hardware e software, como em robótica e automação.
-            </p>
-          </div>
+            <div class="card-body">
+                <h3 class="h5 fw-bold">Redes e Sistemas Distribuídos</h3>
+                <p>Estuda a comunicação entre computadores e a infraestrutura que sustenta o mundo digital. Abrange tópicos como:</p>
+                <ul>
+                    <li><strong>Arquitetura de Redes:</strong> Entendimento dos protocolos e da estrutura da internet.</li>
+                    <li><strong>Segurança da Informação:</strong> Técnicas para proteger sistemas e dados contra ataques.</li>
+                </ul>
+            </div>
         </div>
-
+        
         <div class="card shadow-sm border-0 my-4">
-          <div class="card-body">
-            <h3 class="h5 fw-bold">Redes e Sistemas Distribuídos</h3>
-            <p>
-              Foco em como os computadores se comunicam, a estrutura da internet, segurança de redes e computação em
-              nuvem.
-            </p>
-          </div>
+            <div class="card-body">
+                <h3 class="h5 fw-bold">Hardware e Sistemas Embarcados</h3>
+                <p>
+                    Esta vertente mergulha na parte física dos computadores. Os alunos exploram a arquitetura dos processadores, projetam circuitos digitais e desenvolvem sistemas que integram hardware e software, fundamentais para áreas como robótica, automação industrial e a Internet das Coisas (IoT).
+                </p>
+            </div>
         </div>
 
-      </div>
-    </section>
+        <p class="mt-4">
+            Ao final do curso, o estudante se torna um profissional versátil, capaz de atuar desde o desenvolvimento de software e aplicativos até a automação de processos industriais, preparado para os desafios tecnológicos da sociedade moderna.
+        </p>
+    </div>
+</section>
 
     <div class="text-center my-5">
       <p class="lead fw-bold bg-light border rounded p-3 d-inline-block shadow-sm frase-destaque">
@@ -105,9 +122,10 @@
         <li class="list-group-item"><strong>Realização do Enem:</strong> O candidato precisa ter feito a edição mais
           recente do Exame Nacional do Ensino Médio.</li>
         <li class="list-group-item"><strong>Inscrição no SiSU:</strong> O estudante deve se inscrever na plataforma do
-          SiSU e escolher o curso de Engenharia de Computação no CEFET-MG.</li>
-        <li class="list-group-item"><strong>Nota de Corte:</strong> A seleção é baseada na nota do Enem. Para
-          Computação, as áreas de Matemática e Ciências da Natureza geralmente possuem peso maior.</li>
+          SiSU, geralmente no início do ano, e escolher o curso de Engenharia de Computação no CEFET-MG, campus Timóteo.
+        </li>
+        <li class="list-group-item"><strong>Nota de Corte:</strong> A seleção é baseada na nota do Enem. O CEFET-MG pode
+          atribuir pesos diferentes para cada área de conhecimento, de acordo com o Termo de Adesão.</li>
         <li class="list-group-item"><strong>Modalidades de Concorrência:</strong> O candidato pode optar pela ampla
           concorrência ou pelas vagas reservadas (cotas).</li>
       </ul>
@@ -115,18 +133,17 @@
 
     <section class="my-5">
       <h2 class="h3 subtitulo-curso mb-3">2. Processos Seletivos para Vagas Remanescentes</h2>
-      <p>Após o processo do SiSU, caso sobrem vagas, o CEFET-MG publica editais específicos. As modalidades mais comuns
-        são:</p>
+      <p>Após o processo do SiSU, caso sobrem vagas, o CEFET-MG publica editais específicos para preenchimento. Conforme o regulamento da instituição, as modalidades seguem a seguinte ordem de prioridade:</p>
       <ul class="list-group list-group-flush">
-        <li class="list-group-item"><strong>Transferência:</strong> Para alunos de outras instituições que desejam
-          continuar o curso no CEFET-MG.</li>
+        <li class="list-group-item"><strong>Reopção de Curso:</strong> Para alunos do próprio CEFET-MG que desejam mudar de um curso para outro dentro da instituição.</li>
+        <li class="list-group-item"><strong>Reingresso:</strong> Para ex-alunos do CEFET-MG que tiveram o registro acadêmico cancelado e desejam retomar os estudos.</li>
+        <li class="list-group-item"><strong>Transferência:</strong> Para alunos de outras instituições de ensino
+          superior, nacionais ou estrangeiras, que desejam continuar o curso no CEFET-MG.</li>
         <li class="list-group-item"><strong>Obtenção de Novo Título:</strong> Para quem já possui diploma de curso
-          superior.</li>
-        <li class="list-group-item"><strong>Reopção de Curso:</strong> Para alunos do próprio CEFET-MG que desejam mudar
-          de curso.</li>
+          superior e deseja iniciar uma nova graduação.</li>
       </ul>
     </section>
-
+    
     <section class="text-center my-5">
       <a href="https://www.eng-computacao.timoteo.cefetmg.br/" target="_blank" class="btn btn-primary btn-lg shadow">
         Visite a Página Oficial do Curso
@@ -167,8 +184,6 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="../js/index.js"></script>
+    <script src="../js/index.js"></script>
 </body>
-</body>
-
 </html>

@@ -161,3 +161,47 @@ body.alto-contraste {
   body.alto-contraste #logo-cefetpreto {
     display: inline;
   }
+
+  /* ========================================= */
+/* ESTILOS PARA OS BOTÕES FLUTUANTES DE ZOOM */
+/* ========================================= */
+
+#BotoesZoom {
+    position: fixed;
+    top: 100px;
+    right: 15px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#BotoesZoom button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s ease, background-color 0.3s;
+    padding: 0;
+}
+
+#BotoesZoom button:hover {
+    transform: scale(1.1);
+}
+
+#BotoesZoom button img {
+    width: 100%; /* Imagens ocupam todo o botão */
+    height: 100%;
+}
+
+/* Lógica para mostrar/esconder ícones azul vs. amarelo */
+#BotoesZoom .icone-amarelo { display: none; }
+#BotoesZoom .icone-azul { display: block; }
+
+body.alto-contraste #BotoesZoom .icone-amarelo { display: block; }
+body.alto-contraste #BotoesZoom .icone-azul { display: none; }
