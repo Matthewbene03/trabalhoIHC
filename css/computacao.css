@@ -13,7 +13,8 @@
 
 .frase-destaque {
   color: #004c84;
-  font-size: 1.5rem; /* Ajustei um pouco o tamanho */
+  font-size: 1.5rem;
+  /* Ajustei um pouco o tamanho */
 }
 
 /* Estilos da Seção "Sobre" */
@@ -41,7 +42,8 @@
 .secao-imagem img {
   width: 80%;
   max-width: 1000px;
-  height: auto; /* Altura automática para não distorcer a imagem */
+  height: auto;
+  /* Altura automática para não distorcer a imagem */
   object-fit: cover;
   display: block;
   margin: 0 auto;
@@ -97,7 +99,8 @@ body.alto-contraste {
 }
 
 /* Links agora são brancos, mas com sublinhado para se diferenciarem */
-.alto-contraste a, .alto-contraste .nav-link {
+.alto-contraste a,
+.alto-contraste .nav-link {
   color: #fff !important;
   text-decoration: underline !important;
 }
@@ -110,98 +113,122 @@ body.alto-contraste {
 }
 
 .alto-contraste .btn-primary {
-    background-color: #000 !important;
-    color: #fff !important;
-    border: 2px solid #fff !important;
+  background-color: #000 !important;
+  color: #fff !important;
+  border: 2px solid #fff !important;
 }
 
 .alto-contraste .btn-outline-dark {
-    color: #fff !important;
-    border-color: #fff !important;
+  color: #fff !important;
+  border-color: #fff !important;
 }
 
 .alto-contraste .footer-curso {
-    background: #000 !important;
-    border-top: 1px solid #fff;
+  background: #000 !important;
+  border-top: 1px solid #fff;
 }
 
 /* Melhoria: Suaviza as imagens no modo contraste */
 .alto-contraste img {
-    opacity: 0.85;
+  opacity: 0.85;
 }
 
 /* Melhoria: Garante o foco visível no modo contraste */
 .alto-contraste a:focus,
 .alto-contraste button:focus {
-    outline: 3px solid rgb(255, 255, 255);
-    outline-offset: 2px;
+  outline: 3px solid rgb(255, 255, 255);
+  outline-offset: 2px;
 }
 
 /* Remove o sublinhado do botão no estado normal */
 .alto-contraste .btn-primary {
-    text-decoration: none !important;
+  text-decoration: none !important;
 }
 
 /* Adiciona o efeito de hover: inverte as cores e adiciona o sublinhado */
 .alto-contraste .btn-primary:hover {
-    background-color: #fff !important; /* Fundo fica branco */
-    color: #000 !important;           /* Texto fica preto */
-    text-decoration: underline !important;
+  background-color: #fff !important;
+  /* Fundo fica branco */
+  color: #000 !important;
+  /* Texto fica preto */
+  text-decoration: underline !important;
 }
 
-  /* Por padrão: mostra logo clara, esconde a escura */
-  #logo-cefetpreto {
-    display: none;
-  }
-  
-  /* Quando o alto contraste estiver ativo: inverte */
-  body.alto-contraste #logo-cefet {
-    display: none;
-  }
-  body.alto-contraste #logo-cefetpreto {
-    display: inline;
-  }
+/* Por padrão: mostra logo clara, esconde a escura */
+#logo-cefetpreto {
+  display: none;
+}
 
-  /* ========================================= */
+/* Quando o alto contraste estiver ativo: inverte */
+body.alto-contraste #logo-cefet {
+  display: none;
+}
+
+body.alto-contraste #logo-cefetpreto {
+  display: inline;
+}
+
+/* Botão hambúrguer no modo alto contraste */
+body.alto-contraste .navbar-toggler {
+  border-color: #fff;
+  /* borda branca */
+}
+
+body.alto-contraste .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* ========================================= */
 /* ESTILOS PARA OS BOTÕES FLUTUANTES DE ZOOM */
 /* ========================================= */
 
 #BotoesZoom {
-    position: fixed;
-    top: 100px;
-    right: 15px;
-    z-index: 1000;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+  position: fixed;
+  top: 100px;
+  right: 15px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 #BotoesZoom button {
-    cursor: pointer;
-    background-color: transparent;
-    border: none;
-    border-radius: 50%;
-    width: 32px;
-    height: 32px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: transform 0.2s ease, background-color 0.3s;
-    padding: 0;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s ease, background-color 0.3s;
+  padding: 0;
 }
 
 #BotoesZoom button:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 #BotoesZoom button img {
-    width: 100%; /* Imagens ocupam todo o botão */
-    height: 100%;
+  width: 100%;
+  /* Imagens ocupam todo o botão */
+  height: 100%;
 }
 
 /* Lógica para mostrar/esconder ícones azul vs. amarelo */
-#BotoesZoom .icone-amarelo { display: none; }
-#BotoesZoom .icone-azul { display: block; }
+#BotoesZoom .icone-amarelo {
+  display: none;
+}
 
-body.alto-contraste #BotoesZoom .icone-amarelo { display: block; }
-body.alto-contraste #BotoesZoom .icone-azul { display: none; }
+#BotoesZoom .icone-azul {
+  display: block;
+}
+
+body.alto-contraste #BotoesZoom .icone-amarelo {
+  display: block;
+}
+
+body.alto-contraste #BotoesZoom .icone-azul {
+  display: none;
+}
