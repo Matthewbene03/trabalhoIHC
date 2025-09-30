@@ -8,24 +8,24 @@
 
 body #BotoesZoom div button {
     cursor: pointer;
-    background-color: white;
+    background-color: transparent;
 }
 
 body #BotoesZoom div button img#icone-maisAmarelo,
 body #BotoesZoom div button img#icone-menosAmarelo,
-body #BotoesZoom div button img#icone-lupaAmarelo{
+body #BotoesZoom div button img#icone-lupaAmarelo {
     display: none;
 }
 
 body.high-contrast #BotoesZoom div button img#icone-maisAzul,
 body.high-contrast #BotoesZoom div button img#icone-menosAzul,
-body.high-contrast #BotoesZoom div button img#icone-lupaAzul{
+body.high-contrast #BotoesZoom div button img#icone-lupaAzul {
     display: none;
 }
 
 body.high-contrast #BotoesZoom div button img#icone-maisAmarelo,
 body.high-contrast #BotoesZoom div button img#icone-menosAmarelo,
-body.high-contrast #BotoesZoom div button img#icone-lupaAmarelo{
+body.high-contrast #BotoesZoom div button img#icone-lupaAmarelo {
     display: inline;
 }
 
@@ -54,22 +54,6 @@ section:nth-of-type(odd) {
 
 body.high-contrast section:nth-of-type(odd) {
     background-color: grey;
-}
-
-a:focus,
-button:focus,
-input:focus {
-  outline: none;
-  box-shadow: 0 0 0 4px rgb(255, 0, 0);
-  border-radius: 8px;
-  transition: box-shadow 0.2s ease-in-out;
-}
-
-body.high-contrast a:focus,
-body.high-contrast button:focus,
-body.high-contrast input:focus {
-  outline: none;
-  box-shadow: 0 0 0 4px yellow; 
 }
 
 .estruturaSection {
@@ -267,6 +251,18 @@ footer.criativo h3 {
 }
 
 @media (max-width: 900px) {
+    #BotoesZoom {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+
+        position: fixed;
+        right: 70px;
+        top: 18px;
+    }
+
     .estruturaSection {
         flex-direction: column;
         text-align: center;
